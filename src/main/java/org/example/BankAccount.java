@@ -11,7 +11,7 @@ public class BankAccount {
     }
 
     public int deposit(double amountToDeposit){
-        if (amountToDeposit <= 0){
+        if (amountToDeposit < 0){
             System.out.println("Enter a valid amount!");
             return 101;
         }
@@ -20,7 +20,7 @@ public class BankAccount {
         return 0;
     }
     public int withdraw(double amountToWithdraw){
-        if (amountToWithdraw <= 0){
+        if (amountToWithdraw < 0){
             System.out.println("Enter a valid amount!");
             return 101;
         }
