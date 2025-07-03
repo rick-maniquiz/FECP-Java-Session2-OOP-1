@@ -16,6 +16,7 @@ public class BankAccount {
             return 101;
         }
         this.availableBalance += amountToDeposit;
+        System.out.println("Money deposited!");
         return 0;
     }
     public int withdraw(double amountToWithdraw){
@@ -28,6 +29,7 @@ public class BankAccount {
             return 102;
         }
         this.availableBalance -= amountToWithdraw;
+        System.out.println("Money withdrawn!");
         return 0;
     }
     public void displayInformation(){
